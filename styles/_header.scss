@@ -4,6 +4,7 @@
 header{
     position: relative;
     padding: 0 2rem;
+    margin-top: 1rem;
     font-family: $main-font;
 }
 
@@ -20,35 +21,44 @@ header{
 
 .nav-list {
     display: flex;
-    
 }
-
 
 .nav-item {
     display:flex;
-    list-style: none;
+    text-decoration: none;
     margin-right: 1rem;
-    
 }
 
 .nav-item a {
     display: flex;
-    text-decoration: none;
-    color: #ffffff;
 }
 
-.nav-item a.hover {
+a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1.2rem;
+}
+
+a:hover {
     color: #ffa500;
 }
 
-
-.logo {
+.logo a {
     font-family: $logo-font;
-    font-size: 1rem;
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
+    font-size: 2rem;
+}
 
+.act-btn {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.act-btn {
+    color: #ffffff;
+}
+
+.fa-solid.fa-bars {
+    color: #ffffff;
 }
     
 
