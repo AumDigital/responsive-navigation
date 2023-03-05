@@ -16,7 +16,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .nav-list {
@@ -48,16 +47,34 @@ a:hover {
     font-size: 2rem;
 }
 
-// .act-btn {
-    
-//     color: #ffffff;
-// }
-
 .nav-container .toggle-btn {
     text-decoration: none;
     font-size: 1.5rem;
     color: #ffffff;
     cursor: pointer;
+    display: none;
 }
+
+.act-btn {
+    color: #ffffff;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.act-btn:hover {
+    scale: 1.05;
+    color: #ffffff;
+}
+
+.act-btn {
+    scale: 0.95;
+}
+
+
+
     
 
