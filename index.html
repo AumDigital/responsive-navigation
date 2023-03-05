@@ -29,6 +29,34 @@
                 <a href="#" class="act-btn"> Explore</a>
                     <div class="toggle-btn"> <i class="fa-solid fa-bars"></i> </div>
             </div>
+
+            <div class="dropdown-menu">
+                <li class="nav-item"> <a href="project.html"> Project </a></li>
+                <li class="nav-item"> <a href="gallery.html"> Community </a></li>
+                <li class="nav-item"> <a href="about.html"> About </a></li>
+                <li class="nav-item"> <a href="contact.html"> Contact </a></li>
+                <li> <a href="#" class="act-btn"> Explore </a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle-btn')
+                const toggleBtnIcon = document.querySelector('.toggle-btn i')
+                const dropDownMenu = document.querySelector('.dropdown-menu')
+
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                   
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcon.classList = isOpen
+                        ? 'fa-solid fa-xmark'
+                        : 'fa-solid fa-bars'
+                }
+            </script>
+
+
+
+
         </nav>
 
     </header>

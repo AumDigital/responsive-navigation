@@ -36,16 +36,22 @@ a {
     text-decoration: none;
     color: #ffffff; 
     font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
     color: #ffa500;
 }
 
+a:active {
+    scale: 0.95;
+}
+
 .logo a {
     font-family: $logo-font;
     font-size: 2rem;
 }
+
 
 .nav-container .toggle-btn {
     text-decoration: none;
@@ -62,7 +68,7 @@ a:hover {
     border-radius: 1.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .act-btn:hover {
@@ -70,9 +76,73 @@ a:hover {
     color: #ffffff;
 }
 
-.act-btn {
+.act-btn:active {
     scale: 0.95;
+    border: 1px solid #ffffff;
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    width: 19rem;
+    height: 0;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    list-style: none;
+    background-color: rgba(200, 200, 200, 0.1);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    min-height: 15rem;
+}
+
+
+.dropdown-menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+.dropdown-menu .act-btn {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* IPAD RESPONSIVE DESIGN */
+
+@media screen and (max-width: 50rem){
+    .nav-container .nav-list, .nav-container .act-btn  {
+        display: none;
+    }
+    .nav-container .toggle-btn {
+        display: block;
+    }
+    .dropdown-menu {
+        display: block;
+
+    }
+}
+
+/* PHONE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 35rem) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
+
+    
+
 
 
 
